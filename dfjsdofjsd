@@ -1,0 +1,137 @@
+[33mcommit 9eae955e989c6e3f778334ef9f7c3046847b9241[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 20:55:34 2020 -0300
+
+    configurando fila de emails enviados com o db redis
+
+[33mcommit 618b2e2f79901a1c88597cbd9cf0bfcccee5578a[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 16:12:26 2020 -0300
+
+    configurando templates de email usanto html
+
+[33mcommit 41ca904d471034b854b02a735db59939745a25a5[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 15:37:07 2020 -0300
+
+    configurando nodemailer para envio de email para cancelamento de agendamento de servicos
+
+[33mcommit bb7cfa9a7fac0217d28eead5686903cc6a0691bd[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 15:17:09 2020 -0300
+
+    cancelamento de agendamento
+
+[33mcommit 9c00b32b6603c76b07c6c5a86efe6139092e0c66[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 15:02:52 2020 -0300
+
+    marcando notificações como lidas
+
+[33mcommit 3d235bc50173e484b2d6355b37dec9dfee7c0abf[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 14:57:38 2020 -0300
+
+    listagem de notificações do prestador de serviço
+
+[33mcommit 9c517410d812a01fc3f4205b4a86676d81ba01fb[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 14:42:48 2020 -0300
+
+    notificação para provedor de seviços utilizando mongodb
+
+[33mcommit 1c948e58f4c2c837081e56fc8cd1e683d0f65085[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 13:59:00 2020 -0300
+
+    adicionando configuração mongodb no docker
+
+[33mcommit 17c94741028bda73c4a0087e175b1a1045204497[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 13:44:53 2020 -0300
+
+    listar agendamentos do prestador de serviços do dia
+
+[33mcommit a952ff9d9079fb6a944c9f542ff1b509beb9902f[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 12:16:17 2020 -0300
+
+    paginação de registos de agendamento
+
+[33mcommit e2ed0e04ad5f352dc87a783c37b686420353d8c4[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 12:12:47 2020 -0300
+
+    listando agendamentos do usuário
+
+[33mcommit 244a50b33c60ce5408d8c169161947d465fe4dfd[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 12:01:44 2020 -0300
+
+    adicionando validação para o agendamento de servicos
+
+[33mcommit 2264a49aea5bd6d2c42aa021f14ac40274a99d80[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 11:45:54 2020 -0300
+
+    cadastrando agendamento de serviços para usuarios providers
+
+[33mcommit 2d762f560b619a30a0598c6d3641e8f8d601a234[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 11:05:16 2020 -0300
+
+    migration e model de agendamento
+
+[33mcommit beeec568476f09b7b1c3eb9050bbb9a6e481c20d[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 10:48:19 2020 -0300
+
+    listagem de prestadores de serviços e hablilitando visualizaçao de imagem de avatar pela url
+
+[33mcommit 5bce686bb7cc6fd3a4a05664da59e4b8ca6d0848[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Tue Jun 9 10:11:45 2020 -0300
+
+    colocando chave estrangeira entre avatar do usuário e usuário
+
+[33mcommit 16666a5703f0bfb2878cf57cae705e66e8bf3e97[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Mon Jun 8 14:46:07 2020 -0300
+
+    configurando multer e fazendo upload de imagem
+
+[33mcommit 331dc1f24f9ceffa780a1cc096360c638fb2bd9c[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Mon Jun 8 12:43:46 2020 -0300
+
+    edições necessárias e validando dados de entrada
+
+[33mcommit da565cb268171581353014a20564b764b856990e[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Mon Jun 8 11:32:36 2020 -0300
+
+    update de user
+
+[33mcommit 8e32e55615e9f9ea10d8ac647bb3bdcd3d0a33fb[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Mon Jun 8 11:20:04 2020 -0300
+
+    middleware de autenticação para controlar rotas de usuarios nao cadastrados ou autenticados
+
+[33mcommit c2f885be0db0078512b43a183fed156cd4495a75[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Mon Jun 8 10:51:47 2020 -0300
+
+    autenticação jwt
+
+[33mcommit be83fcef312261379e874bd7977cc3c703621dda[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Mon Jun 8 10:21:06 2020 -0300
+
+    gerando hash da senha
+
+[33mcommit 58ba3bd041bd0eaf41cb014641181925d89a8184[m
+Author: Romulo Pereira <romulo.pereiracz@gmail.com>
+Date:   Mon Jun 8 09:49:45 2020 -0300
+
+    criando projeto nodejs, ajustando vscode, adicionando eslint, prettier, nodemon , dependencies omr  sequelize e postgressql, criando o banco e criando o model user, loader e cadastro de usuário
