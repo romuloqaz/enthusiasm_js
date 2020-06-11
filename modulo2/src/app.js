@@ -2,10 +2,9 @@ import 'dotenv/config';
 
 import express from 'express';
 import path from 'path';
-import Youch from 'youch';
 import * as Sentry from '@sentry/node';
+import Youch from 'youch';
 import 'express-async-errors';
-
 import routes from './routes';
 import sentryConfig from './config/sentry';
 
@@ -42,8 +41,9 @@ class App {
                 const errors = await new Youch(err, req).toJSON();
                 return res.status(500).json(errors);
             }
-
-            return res.status(500).json({ error: 'Internal server error' });
+            return res.status(500).json({
+                error: 'Internal Server Error, the administrador was notified!',
+            });
         });
     }
 }
