@@ -22,7 +22,8 @@ export default function Routes() {
           name="Main"
           component={Main}
           options={{
-            title: 'Dashboard',
+            headerTitleStyle: { alignSelf: 'center' },
+            title: 'Usuários',
             headerTintColor: '#FFF',
           }}
         />
