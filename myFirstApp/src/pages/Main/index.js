@@ -1,20 +1,30 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { Button } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useNavigation } from '@react-navigation/native';
+import { Container, Form, Input, SubmitButton } from './styles';
 
-import { Container } from './styles';
+Icon.loadFont();
 
-// import { Container } from './styles';
-
-const Main = () => {
+export default function Main() {
   const { navigate } = useNavigation();
   return (
-    <View>
-      <Container />
-      <Text>Home</Text>
+    <Container>
+      <Form>
+        <Input
+          autoCorrect={false}
+          autoCapitalize="none"
+          placeholder="Adicionar usuário"
+        />
+        <SubmitButton>
+          <Icon name="add-circle-outline" size={20} color="#FFF" />
+        </SubmitButton>
+      </Form>
       <Button title="Navigate to users" onPress={() => navigate('User')} />
-    </View>
+    </Container>
   );
-};
+}
 
-export default Main;
+Main.navigationOptions = {
+  title: 'Usuários',
+};
