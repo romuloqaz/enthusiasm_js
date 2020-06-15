@@ -1,13 +1,16 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 
 function App() {
   const [tech, setTech] = useState([]);
   const [newTech, setNewTech] = useState('');
 
-  function handleAdd() {
+  const handleAdd = useCallback(() => {
     setTech([...tech, newTech]);
     setNewTech('');
-  }
+  }, [newTech, tech]);
+  // pode ser utilizada para funções que não precisam ser montadas sempre que um valor alterar
+  // so vai ser recriada quando as variaveis newTech, tech sofrerem alterações
+  // utilizada apenas em funções que utilizam estados ou propriedades do proprio compoente
 
   useEffect(() => {
     const storageTech = localStorage.getItem('tech');
