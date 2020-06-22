@@ -1,5 +1,5 @@
 import React from 'react';
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 
 import AuthLayout from '~/pages/_layouts/auth';
@@ -7,7 +7,7 @@ import DefaultLayout from '~/pages/_layouts/default';
 
 export default function RouteWrapper({
   component: Component,
-  isPrivate,
+  isPrivate = false,
   ...rest
 }) {
   const signed = false;
@@ -15,6 +15,7 @@ export default function RouteWrapper({
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
   }
+
   if (signed && !isPrivate) {
     return <Redirect to="/dashboard" />;
   }
@@ -23,7 +24,6 @@ export default function RouteWrapper({
 
   return (
     <Route
-      // eslint-disable-next-line react/jsx-props-no-spreading
       {...rest}
       render={(props) => (
         <Layout>
@@ -35,8 +35,8 @@ export default function RouteWrapper({
 }
 
 RouteWrapper.propTypes = {
-  isPrivate: Proptypes.bool,
-  component: Proptypes.oneOfType([Proptypes.element, Proptypes.func])
+  isPrivate: PropTypes.bool,
+  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
     .isRequired,
 };
 
