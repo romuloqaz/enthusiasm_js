@@ -7,7 +7,6 @@ import {
   setMinutes,
   setSeconds,
   isBefore,
-  isEqual,
   parseISO,
 } from 'date-fns';
 import pt from 'date-fns/locale/pt';
@@ -84,19 +83,6 @@ export default function Dashboard() {
           </Time>
         ))}
       </ul>
-      <br />
-      <br />
-      <header>
-        <button type="button">
-          <MdChevronLeft size={36} color="FFF" onClick={handlePrevDay} />
-        </button>
-        <strong>{dateFormatted}</strong>
-        <button type="button">
-          <MdChevronRight size={36} color="FFF" onClick={handleNextDay} />
-        </button>
-      </header>
-      <br />
-      <br />
     </Container>
   );
 }
