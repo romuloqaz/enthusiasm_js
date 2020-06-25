@@ -26,12 +26,22 @@ module.exports = {
   ],
   rules: {
     'prettier/prettier': 'error',
-    'react/jsx-filename-extension': [
-      'warn',
-      {
-        extensions: ['.jsx', '.js'],
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+    'import/prefer-default-export': 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    'react/jsx-one-expression-per-line': 'off',
+    'global-require': 'off',
+    'react-native/no-raw-text': 'off',
+    'no-param-reassign': 'off',
+    'no-underscore-dangle': 'off',
+    camelcase: 'off',
+    'no-console': ['error', { allow: ['tron'] }],
+  },
+  settings: {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src',
       },
-    ],
-    'import/prefer-default-export': 'off', // para garantir que import/export sem ser apenas o i/e default
+    },
   },
 };
