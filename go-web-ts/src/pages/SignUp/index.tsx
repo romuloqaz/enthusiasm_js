@@ -16,7 +16,7 @@ const SignUp: React.FC = () => {
 
   return (
     <Container>
-      <Background />
+
       <Content>
         <img src={logoImg} alt="GoBarber" />
 
@@ -38,6 +38,8 @@ const SignUp: React.FC = () => {
           Voltar para logon
         </a>
       </Content>
+
+      <Background />
     </Container>
   );
 };

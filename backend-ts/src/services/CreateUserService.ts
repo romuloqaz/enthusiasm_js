@@ -10,25 +10,23 @@ interface Request {
 
 class CreateUserService {
   public async execute({ name, email, password }: Request): Promise<User> {
-    const usersRepository = getRepository(User);
+    const userRepository = getRepository(User);
 
-    const checkUserExists = await usersRepository.findOne({
-      where: { email },
-    });
+    const checkUSerExists = await userRepository.findOne({ where: { email } });
 
-    if (checkUserExists) {
-      throw new Error('Email address already used');
+    if (checkUSerExists) {
+      throw new Error('Email address already used.');
     }
 
     const hashedPassword = await hash(password, 8);
 
-    const user = usersRepository.create({
+    const user = userRepository.create({
       name,
       email,
       password: hashedPassword,
     });
 
-    await usersRepository.save(user);
+    await userRepository.save(user);
 
     return user;
   }
